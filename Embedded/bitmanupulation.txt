@@ -1,0 +1,35 @@
+                                                       Truth Table
+                                                 | A  | B  |   &  | |  | ^
+                                                 | ---|----|  ----|----|---
+                                                 | 0  | 0  |   0  | 0  | 0
+                                                 | ---|----|  ----|----|---
+                                                 | 0  | 1  |   0  | 1  | 1
+                                                 | ---|----|  ----|----|---
+                                                 | 1  | 0  |   0  | 1  | 1
+                                                 | ---|----|  ----|----|---
+                                                 | 1  | 1  |   1  | 1  | 0
+                                                 | ---|----|  ----|----|---
+________________________________________________________________________________________________________________________________________________
+Bitwise operators in c++
+& and  [Result is 1 only if both bits are 1]
+| or   [Result is 1 if one of the bit is 1]
+^ xor  [Result is one if both bits are different]
+~ bitwise not [Invert all the bits]
+<< left shift [takes two operands, left shifts the bits of the first operand, the second operand decides the number of places to shift] 
+>> right shift [takes two operands, right shifts the bits of the first operand, the second operand decides the number of places to shift]
+ 
+________________________________________________________________________________________________________________________________________________
+
+Getting the status of the bit
+n = 0101
+lets say we want to check the sataus of bit at position 3
+lets create a mask which is 1 at position 3 and 0 everywhere else
+mask = 1000. this can be done by doing 1<<3(shifting 1 to left 3 times)
+doing bitwise and result = n&mask
+if result == 0, bit 3 is not set. If it is 1, it is set.
+
+________________________________________________________________________________________________________________________________________________
+Left shiting a number by one place gives 2x the original number
+Right shifting a number by one place gives number/2
+
+________________________________________________________________________________________________________________________________________________
